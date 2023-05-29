@@ -24,4 +24,20 @@ function increaseButtonHandler() {
     document.getElementById('input-field').value = initialNumber;
 }
 
+// increase number 5 times
+let initialNumberFiveClicked = 0;
+function increaseButtonHandlerFiveTimes() {
+    if (initialNumberFiveClicked != 5) {
+        initialNumberFiveClicked = initialNumberFiveClicked + 1;
+        document.getElementById('input-field-five').value = initialNumberFiveClicked;
+    }
+    else {
+        document.getElementById('increase-button-handler').disabled = true;
+    }
+}
+
+document.getElementById('increase-button-handler').addEventListener('click', function () {
+    increaseButtonHandlerFiveTimes();
+})
+
 

@@ -14,4 +14,14 @@ document.getElementById('add-item-button').addEventListener('click', function ()
     li.innerText = 'New Item';
     const addItem = document.getElementById('item-add');
     addItem.appendChild(li);
-})
+});
+
+
+// increase number
+let initialNumber = 0;
+function increaseButtonHandler() {
+    initialNumber = initialNumber + 1;
+    document.getElementById('input-field').value = initialNumber;
+}
+
+
